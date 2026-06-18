@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <title>父亲节快乐</title>
+    <link rel="stylesheet" href="style.css?v=3">
+</head>
+<body>
+    <div class="bg-particles"></div>
+    
+    <div class="container">
+        <!-- 第一步：选择姓名 -->
+        <div id="step1" class="step active">
+            <div class="step-header">
+                <span class="step-badge">第一步</span>
+                <h2 class="step-title">请问你是谁？</h2>
+                <p class="step-subtitle">请选择你的名字</p>
+            </div>
+            <div class="name-grid">
+                <button class="name-btn" data-name="杨小花"><span class="name-avatar">👧</span><span class="name-text">杨小花</span></button>
+                <button class="name-btn" data-name="冯辉艳"><span class="name-avatar">👩</span><span class="name-text">冯辉艳</span></button>
+                <button class="name-btn" data-name="冯辉杨"><span class="name-avatar">👦</span><span class="name-text">冯辉杨</span></button>
+                <button class="name-btn" data-name="冯光固"><span class="name-avatar">👨</span><span class="name-text">冯光固</span></button>
+            </div>
+        </div>
+
+        <!-- 第二步：选择年龄 -->
+        <div id="step2" class="step">
+            <div class="step-header">
+                <span class="step-badge">第二步</span>
+                <h2 class="step-title">你今年多少岁？</h2>
+                <p class="step-subtitle">请选择正确的年龄</p>
+            </div>
+            <div class="age-grid">
+                <button class="age-btn" data-age="52"><span class="age-number">52</span><span class="age-label">岁</span></button>
+                <button class="age-btn" data-age="53"><span class="age-number">53</span><span class="age-label">岁</span></button>
+                <button class="age-btn" data-age="54"><span class="age-number">54</span><span class="age-label">岁</span></button>
+                <button class="age-btn" data-age="55"><span class="age-number">55</span><span class="age-label">岁</span></button>
+            </div>
+        </div>
+
+        <!-- 第三步：回答正确确认 -->
+        <div id="step3" class="step">
+            <div class="confirm-container">
+                <div class="confirm-icon">🎉</div>
+                <h1 class="confirm-title">恭喜！回答正确！</h1>
+                <p class="confirm-subtitle">冯光固先生，您是一位伟大的父亲！</p>
+                <div class="confirm-message">
+                    <p>今天是个特别的日子</p>
+                    <p>您的家人为您准备了一份特别的礼物</p>
+                    <p>点击下方按钮，查看惊喜吧！</p>
+                </div>
+                <button id="nextBtn1" class="action-btn primary">查看惊喜 🎁</button>
+            </div>
+        </div>
+
+        <!-- 第四步：全家福展示 -->
+        <div id="step4" class="step">
+            <div class="photo-container">
+                <div class="step-header">
+                    <span class="step-badge">温馨时刻</span>
+                    <h2 class="step-title">幸福一家人</h2>
+                    <p class="step-subtitle">这是我们最珍贵的回忆</p>
+                </div>
+                <div class="photo-frame">
+                    <img src="family-photo.jpg" alt="全家福" class="family-photo">
+                    <div class="photo-caption"><p>👨‍👩‍👧‍👦 我们的一家人 👨‍👩‍👧‍👦</p></div>
+                </div>
+                <div class="photo-message">
+                    <p>有您在的地方就是家</p>
+                    <p>您的笑容是我们最大的幸福</p>
+                </div>
+                <button id="nextBtn2" class="action-btn primary">继续查看 💝</button>
+            </div>
+        </div>
+
+        <!-- 第五步：父亲节快乐祝福 -->
+        <div id="step5" class="step">
+            <div class="blessing-container">
+                <div class="blessing-icon">🎊</div>
+                <h1 class="blessing-title">父亲节快乐！</h1>
+                <p class="blessing-subtitle">祝我的老爸节日快乐！</p>
+                <div class="blessing-message">
+                    <p>🌟 感谢您一直以来的付出与爱 🌟</p>
+                    <p>💪 您是我的超级英雄 💪</p>
+                    <p>❤️ 愿您健康长寿，天天开心 ❤️</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- 第六步：领取礼物提示 -->
+        <div id="step6" class="step">
+            <div class="gift-container">
+                <div class="gift-icon">🧧</div>
+                <h1 class="gift-title">专属礼物来啦！</h1>
+                <p class="gift-subtitle">您的父亲节专属礼物已准备好</p>
+                
+                <div class="gift-card">
+                    <div class="gift-amount">
+                        <span class="currency">¥</span>
+                        <span class="amount">520</span>
+                    </div>
+                    <p class="gift-note">父亲节专属礼物，请查收！</p>
+                </div>
+
+                <div class="gift-final-msg">
+                    <p class="final-text">现在，你可以私信你的儿子领取节日礼物了</p>
+                </div>
+                
+                <div class="gift-instructions">
+                    <h3>👇 领取步骤 👇</h3>
+                    <div class="instruction-steps">
+                        <div class="instruction-step">
+                            <span class="step-num">1</span>
+                            <p>打开微信</p>
+                        </div>
+                        <div class="instruction-step">
+                            <span class="step-num">2</span>
+                            <p>私信您的儿子</p>
+                        </div>
+                        <div class="instruction-step">
+                            <span class="step-num">3</span>
+                            <p>发送"父亲节"</p>
+                        </div>
+                        <div class="instruction-step">
+                            <span class="step-num">4</span>
+                            <p>即可领取礼物！</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="gift-footer">
+                    <p class="footer-love">来自最爱您的家人 💝</p>
+                    <p class="footer-date">2026年6月 · 父亲节</p>
+                </div>
+                <button id="restartBtn" class="action-btn secondary">重新开始 🔄</button>
+            </div>
+        </div>
+
+        <!-- 返回按钮 -->
+        <div id="backBtn" class="back-button" style="display: none;">← 返回上一页</div>
+
+        <!-- 提示弹窗 -->
+        <div id="toast" class="toast">
+            <span class="toast-icon"></span>
+            <span class="toast-message"></span>
+        </div>
+    </div>
+
+    <script src="app.js?v=3"></script>
+</body>
+</html>
